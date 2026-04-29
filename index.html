@@ -91,8 +91,8 @@
                 <line x1="2" y1="12" x2="22" y2="12"></line>
                 <polyline points="15 5 22 12 15 19"></polyline>
             </svg>
-            <!-- Logo: Music Industry Registry Online -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter uppercase leading-none text-[#111] whitespace-nowrap">Music Industry Registry Online</h1>
+            <!-- Logo: Music Industry Registry -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter uppercase leading-none text-[#111] whitespace-nowrap">Music Industry Registry</h1>
         </div>
         <div class="flex items-center gap-6 lg:gap-12">
             <a href="#directories" class="hidden md:block font-mono text-xs uppercase tracking-widest hover:text-[#FF3300] text-[#111] transition-colors">Directories</a>
@@ -105,11 +105,9 @@
 
     <!-- 1. HERO -->
     <header class="min-h-screen flex items-center justify-center relative overflow-hidden bg-white">
-        <!-- Background Container: Starts below the header (mt-20) to ensure the face at top of image is visible -->
+        <!-- Background Container: Starts below the header -->
         <div class="absolute inset-0 z-0 mt-[72px] md:mt-[96px]">
-            <!-- object-top ensures the face isn't cut off from the top edge -->
             <img src="https://i.postimg.cc/VsF5Px4B/myhero.png" alt="Music Industry Archive" class="w-full h-full object-cover object-top">
-            <!-- Cinematic Dark Filter -->
             <div class="absolute inset-0 bg-[#111] opacity-25 mix-blend-multiply"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111] opacity-60"></div>
         </div>
@@ -168,8 +166,37 @@
             </div>
         </section>
 
+        <!-- 2.6 INTRO STATEMENT -->
+        <section class="pt-24 pb-12 px-6 md:px-12 max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
+                
+                <!-- Heading Column with Red Underline Splash -->
+                <div class="relative shrink-0 pt-4">
+                    <h2 class="text-6xl md:text-8xl font-bold uppercase tracking-tighter text-[#111] leading-none relative z-10">35 Years!</h2>
+                    
+                    <!-- Paint Underline Stroke (SVG) - Slightly relaxed proximity for better legibility -->
+                    <div class="w-full h-12 -mt-3 md:-mt-5 text-[#FF3300] opacity-95 -rotate-1 relative z-0">
+                        <svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-full">
+                            <!-- Bolder, thicker brush stroke path -->
+                            <path fill="currentColor" d="M2,25 C40,18 80,35 120,22 C160,10 195,28 198,22 L200,32 C185,38 150,22 110,35 C70,48 35,28 2,35 Z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Content Column -->
+                <div class="max-w-2xl">
+                    <p class="text-xl md:text-2xl font-medium leading-[1.2] text-[#111] mb-8">
+                        For more than three decades we have continually published the most up-to-date contact information directories available for music business professionals and those serving the industry.
+                    </p>
+                    <p class="font-mono text-xs md:text-sm uppercase tracking-widest text-gray-500 leading-relaxed border-l-2 border-[#FF3300] pl-6">
+                        Our titles include the <span class="text-[#111] font-bold">Film & Television Music Guide</span>, <span class="text-[#111] font-bold">A&R Registry</span>, <span class="text-[#111] font-bold">Music Publishers</span>, & <span class="text-[#111] font-bold">Music Business Attorneys</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- 2.75 SEARCH BAR -->
-        <section class="pt-16 pb-12 px-6 md:px-12 max-w-5xl mx-auto">
+        <section class="pb-12 px-6 md:px-12 max-w-5xl mx-auto">
             <div class="bg-white border-2 border-[#111] shadow-editorial flex flex-col md:flex-row focus-within:ring-4 ring-[#FF3300]/20 transition-all">
                 <div class="flex-grow flex items-center border-b-2 md:border-b-0 md:border-r-2 border-[#111] px-6 py-4 md:py-6 relative">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -231,14 +258,11 @@
 
         <!-- 3.5 LIGHT BLACK SEPARATOR WITH ARROWS -->
         <div class="max-w-5xl mx-auto px-6 md:px-12 flex items-center gap-4 py-12">
-            <!-- Left Arrow -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-300 rotate-180">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
-            <!-- Light Black Line -->
             <div class="flex-grow h-[1px] bg-gray-200"></div>
-            <!-- Right Arrow -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-300">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -331,7 +355,7 @@
             </div>
         </div>
         <div class="max-w-5xl mx-auto pt-8 border-t border-gray-800 text-xs font-mono text-gray-500 flex flex-col md:flex-row justify-between">
-            <p>© 2026 Music Industry Registry Online. All rights reserved.</p><p>Designed for the Industry.</p>
+            <p>© 2026 Music Industry Registry. All rights reserved.</p><p>Designed for the Industry.</p>
         </div>
     </footer>
 
