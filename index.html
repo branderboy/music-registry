@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" needle-id="music-business-registry-html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Business Registry | Industry Directories</title>
+    <title>Music Industry Registry | Industry Directories</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -81,18 +81,18 @@
         }
     </style>
 </head>
-<body class="selection:bg-[#FF3300] selection:text-white">
+<body class="selection:bg-[#FF3300] selection:text-white bg-white">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 p-4 md:p-6 md:px-12 flex justify-between items-center transition-all overflow-hidden">
+    <!-- Navigation (Solid White Header) -->
+    <nav class="fixed w-full top-0 z-50 bg-white border-b border-gray-200 p-4 md:p-6 md:px-12 flex justify-between items-center transition-all overflow-hidden">
         <div class="flex items-center relative pl-8 md:pl-10">
-            <!-- Arrow made black -->
+            <!-- Black Arrow pointing to M -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="absolute left-0 top-[-4px] md:top-[-6px] w-7 h-7 md:w-9 md:h-9 text-[#111] rotate-[40deg]">
                 <line x1="2" y1="12" x2="22" y2="12"></line>
                 <polyline points="15 5 22 12 15 19"></polyline>
             </svg>
-            <!-- Logo corrected to Registry Online -->
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter uppercase leading-none text-[#111] whitespace-nowrap">Music Business Registry Online</h1>
+            <!-- Logo: Music Industry Registry Online -->
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter uppercase leading-none text-[#111] whitespace-nowrap">Music Industry Registry Online</h1>
         </div>
         <div class="flex items-center gap-6 lg:gap-12">
             <a href="#directories" class="hidden md:block font-mono text-xs uppercase tracking-widest hover:text-[#FF3300] text-[#111] transition-colors">Directories</a>
@@ -104,21 +104,26 @@
     </nav>
 
     <!-- 1. HERO -->
-    <header class="min-h-screen flex items-center justify-center relative pt-44 pb-20 px-6 md:px-12 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <!-- object-top ensures the face at the top isn't cut off -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden bg-white">
+        <!-- Background Container: Starts below the header (mt-20) to ensure the face at top of image is visible -->
+        <div class="absolute inset-0 z-0 mt-[72px] md:mt-[96px]">
+            <!-- object-top ensures the face isn't cut off from the top edge -->
             <img src="https://i.postimg.cc/VsF5Px4B/myhero.png" alt="Music Industry Archive" class="w-full h-full object-cover object-top">
-            <div class="absolute inset-0 bg-[#111] opacity-20 mix-blend-multiply"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111] opacity-50"></div>
+            <!-- Cinematic Dark Filter -->
+            <div class="absolute inset-0 bg-[#111] opacity-25 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111] opacity-60"></div>
         </div>
 
-        <div class="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto w-full text-white mt-12">
+        <!-- Centered Content -->
+        <div class="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto w-full text-white mt-24">
             <div class="font-mono text-white bg-[#111] px-5 py-2 text-xs md:text-sm font-bold mb-6 uppercase tracking-widest leading-relaxed">
                 Made for: <br class="md:hidden">A&R • Music Publishers • Attorneys • Playlists • Film & TV
             </div>
+            
             <h2 class="text-4xl md:text-6xl lg:text-[4.5rem] font-bold leading-[0.95] tracking-tighter mb-6 uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
                 Access the<br>Music Industry<br>Without the<br>Guesswork.
             </h2>
+            
             <div class="max-w-xl">
                 <p class="text-lg md:text-xl leading-relaxed font-medium mb-3 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
                     For artists, managers, and professionals who need the right contacts—fast.
@@ -127,6 +132,7 @@
                     No chasing outdated information. No wasted outreach. Just organized, verified industry access.
                 </p>
             </div>
+            
             <div class="mt-10 drop-shadow-xl">
                 <a href="#directories" class="inline-block border-b-2 border-white pb-1 font-mono text-xs md:text-sm font-bold uppercase tracking-widest hover:text-[#FF3300] hover:border-[#FF3300] transition-colors">
                     Explore the Archive →
@@ -135,161 +141,178 @@
         </div>
     </header>
 
-    <!-- 2. AUTHORITY STRIP -->
-    <div class="w-full bg-[#111] border-b border-[#111] overflow-hidden flex whitespace-nowrap py-4 z-30 relative shadow-editorial">
-        <div class="font-mono text-sm text-gray-300 uppercase flex space-x-16 animate-ticker shrink-0 tracking-widest">
-            <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
-            <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
-        </div>
-        <div class="font-mono text-sm text-gray-300 uppercase flex space-x-16 animate-ticker shrink-0 absolute left-[100%] tracking-widest">
-            <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
-            <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
-        </div>
-    </div>
+    <!-- CONTENT WRAPPER -->
+    <div class="bg-white">
 
-    <!-- 2.5 AS SEEN IN -->
-    <section class="py-10 bg-white border-b border-gray-200 px-6 md:px-12 flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-12">
-        <span class="font-mono text-xs font-bold tracking-widest uppercase text-gray-400 md:border-r md:border-gray-200 md:pr-8">As Featured In</span>
-        <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-50 grayscale transition-opacity hover:opacity-80">
-            <span class="font-serif text-2xl md:text-3xl font-bold tracking-tighter">Billboard</span>
-            <span class="font-sans text-xl md:text-2xl font-black tracking-tight uppercase">VARIETY</span>
-            <span class="font-serif text-2xl md:text-3xl italic tracking-wider">Rolling Stone</span>
-            <span class="font-sans text-xl md:text-2xl font-bold tracking-tighter uppercase">Forbes</span>
-            <span class="font-serif text-xl md:text-2xl font-bold tracking-tight leading-none text-center">Music Business<br>Worldwide</span>
-        </div>
-    </section>
-
-    <!-- 2.75 SEARCH BAR -->
-    <section class="pt-16 pb-12 px-6 md:px-12 max-w-5xl mx-auto">
-        <div class="bg-white border-2 border-[#111] shadow-editorial flex flex-col md:flex-row focus-within:ring-4 ring-[#FF3300]/20 transition-all">
-            <div class="flex-grow flex items-center border-b-2 md:border-b-0 md:border-r-2 border-[#111] px-6 py-4 md:py-6 relative">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-                <input type="text" id="product-search" placeholder="Search the archive (e.g., Spotify, A&R)..." class="w-full bg-transparent pl-4 text-xl md:text-2xl font-bold uppercase tracking-tighter text-[#111] placeholder-gray-300 focus:outline-none rounded-none">
+        <!-- 2. AUTHORITY STRIP -->
+        <div class="w-full bg-[#111] border-b border-[#111] overflow-hidden flex whitespace-nowrap py-4 z-30 relative shadow-editorial">
+            <div class="font-mono text-sm text-gray-300 uppercase flex space-x-16 animate-ticker shrink-0 tracking-widest">
+                <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
+                <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
             </div>
-            <div class="w-full md:w-[30%] flex items-center px-6 py-4 md:py-6 relative border-b-2 md:border-b-0 md:border-r-2 border-[#111] bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-                <select id="product-category" class="w-full bg-transparent pl-4 text-lg md:text-xl font-bold uppercase tracking-tighter text-[#111] focus:outline-none appearance-none cursor-pointer h-full">
-                    <option value="all">Any Category</option>
-                    <option value="labels">A&R / Labels</option>
-                    <option value="sync">Film / TV Sync</option>
-                    <option value="legal">Legal / Biz</option>
-                    <option value="promo">Playlists / PR</option>
-                </select>
-                <div class="pointer-events-none absolute right-6 top-1/2 -translate-y-1/2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#111]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            <div class="font-mono text-sm text-gray-300 uppercase flex space-x-16 animate-ticker shrink-0 absolute left-[100%] tracking-widest">
+                <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
+                <span>A&R Contacts</span><span>+</span><span>Film/TV Sync Leads</span><span>+</span><span>Music Publishers</span><span>+</span><span>Industry Attorneys</span><span>+</span><span>Spotify Curators</span>
+            </div>
+        </div>
+
+        <!-- 2.5 AS SEEN IN -->
+        <section class="py-10 border-b border-gray-200 px-6 md:px-12 flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-12">
+            <span class="font-mono text-xs font-bold tracking-widest uppercase text-gray-400 md:border-r md:border-gray-200 md:pr-8">As Featured In</span>
+            <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-50 grayscale transition-opacity hover:opacity-80">
+                <span class="font-serif text-2xl md:text-3xl font-bold tracking-tighter">Billboard</span>
+                <span class="font-sans text-xl md:text-2xl font-black tracking-tight uppercase">VARIETY</span>
+                <span class="font-serif text-2xl md:text-3xl italic tracking-wider">Rolling Stone</span>
+                <span class="font-sans text-xl md:text-2xl font-bold tracking-tighter uppercase">Forbes</span>
+                <span class="font-serif text-xl md:text-2xl font-bold tracking-tight leading-none text-center">Music Business<br>Worldwide</span>
+            </div>
+        </section>
+
+        <!-- 2.75 SEARCH BAR -->
+        <section class="pt-16 pb-12 px-6 md:px-12 max-w-5xl mx-auto">
+            <div class="bg-white border-2 border-[#111] shadow-editorial flex flex-col md:flex-row focus-within:ring-4 ring-[#FF3300]/20 transition-all">
+                <div class="flex-grow flex items-center border-b-2 md:border-b-0 md:border-r-2 border-[#111] px-6 py-4 md:py-6 relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
+                    <input type="text" id="product-search" placeholder="Search the archive (e.g., Spotify, A&R)..." class="w-full bg-transparent pl-4 text-xl md:text-2xl font-bold uppercase tracking-tighter text-[#111] placeholder-gray-300 focus:outline-none rounded-none">
                 </div>
-            </div>
-            <button id="search-btn" class="bg-[#FF3300] hover:bg-[#111] text-white px-10 py-6 font-mono text-sm md:text-base font-bold uppercase tracking-widest transition-colors flex-shrink-0 flex items-center justify-center gap-3">
-                <span>Find</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-            </button>
-        </div>
-    </section>
-
-    <!-- 2.8 SECTION HEADER -->
-    <section class="pb-6 px-6 md:px-12 max-w-4xl mx-auto text-center flex flex-col items-center">
-        <div class="w-12 h-1 bg-[#FF3300] mb-6"></div>
-        <h2 class="text-3xl md:text-5xl lg:text-[3.5rem] font-bold uppercase leading-[0.9] tracking-tighter text-[#111]">
-            Access You Need to<br>Thrive In The Industry.
-        </h2>
-    </section>
-
-    <!-- 3. FEATURED FLAGSHIP -->
-    <section class="pb-16 px-6 md:px-12 max-w-4xl mx-auto overflow-hidden">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6 relative">
-            <div class="w-full md:w-[55%] relative z-10">
-                <div class="font-mono text-[#FF3300] text-xs font-bold mb-4 uppercase tracking-widest text-center md:text-left">Flagship Bundle</div>
-                <img src="https://static.wixstatic.com/media/326afb_7c54a11a2bd24c34b5daf248822b1920~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Film & TV Music Guide Full Bundle" class="w-full aspect-[4/3] object-cover shadow-editorial border border-gray-100 mx-auto">
-            </div>
-            <div class="w-full md:w-[45%] md:-ml-10 mt-6 md:mt-10 relative z-20 bg-white p-6 md:p-8 shadow-editorial border border-gray-100 text-center md:text-left flex flex-col items-center md:items-start">
-                <h3 class="text-3xl md:text-4xl font-bold uppercase leading-[0.9] tracking-tighter mb-4">Film & TV<br>Music Guide</h3>
-                <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">A complete year of updates. Four physical print editions and four digital PDF updates delivered quarterly. Never pitch to an outdated contact again.</p>
-                <div class="flex items-center gap-6 pt-6 border-t border-gray-200 w-full justify-center md:justify-start">
-                    <span class="text-2xl font-mono font-bold text-[#111] tracking-tighter">$750.00</span>
-                    <button class="bg-[#111] text-white px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#FF3300] transition-colors">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. PRODUCT SYSTEM -->
-    <section id="directories" class="py-16 px-6 md:px-12 bg-white border-t border-gray-200">
-        <div class="max-w-5xl mx-auto">
-            
-            <!-- Synthesized Entry Header (Cleaned up as requested) -->
-            <div class="mb-16">
-                <div class="flex flex-col md:flex-row items-baseline gap-6">
-                    <div class="bg-[#111] text-white px-6 py-2 font-mono text-xs font-bold uppercase tracking-[0.4em] rotate-[-2deg] shadow-editorial shrink-0">
-                        Archive.
+                <div class="w-full md:w-[30%] flex items-center px-6 py-4 md:py-6 relative border-b-2 md:border-b-0 md:border-r-2 border-[#111] bg-gray-50 hover:bg-gray-100 transition-colors cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 v2M7 7h10" />
+                    </svg>
+                    <select id="product-category" class="w-full bg-transparent pl-4 text-lg md:text-xl font-bold uppercase tracking-tighter text-[#111] focus:outline-none appearance-none cursor-pointer h-full">
+                        <option value="all">Any Category</option>
+                        <option value="labels">A&R / Labels</option>
+                        <option value="sync">Film / TV Sync</option>
+                        <option value="legal">Legal / Biz</option>
+                        <option value="promo">Playlists / PR</option>
+                    </select>
+                    <div class="pointer-events-none absolute right-6 top-1/2 -translate-y-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#111]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#111] leading-none">
-                        The Complete Directory Index
-                    </h2>
                 </div>
+                <button id="search-btn" class="bg-[#FF3300] hover:bg-[#111] text-white px-10 py-6 font-mono text-sm md:text-base font-bold uppercase tracking-widest transition-colors flex-shrink-0 flex items-center justify-center gap-3">
+                    <span>Find</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </button>
             </div>
-            
-            <div class="flex flex-col md:flex-row gap-10 lg:gap-16">
-                <!-- Left: Category Switcher -->
-                <div class="w-full md:w-1/4 flex flex-col gap-6 md:sticky md:top-32 h-fit">
-                    <h2 class="text-sm font-mono text-gray-400 uppercase tracking-widest mb-6 pb-4 border-b border-gray-200">Filter By Vertical</h2>
-                    <button onclick="filterLedger('all')" class="cat-btn cat-active text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">All Data</button>
-                    <button onclick="filterLedger('labels')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">A&R / Labels</button>
-                    <button onclick="filterLedger('sync')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Film / TV Sync</button>
-                    <button onclick="filterLedger('legal')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Legal / Biz</button>
-                    <button onclick="filterLedger('promo')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Playlists / PR</button>
-                </div>
+        </section>
 
-                <!-- Right: Product Grid -->
-                <div class="w-full md:w-3/4">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10" id="ledger-container"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. HOW IT WORKS -->
-    <section class="py-16 bg-white border-t border-gray-200 px-6 md:px-12">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-12 text-center">How to use our data</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                    <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">01.</span>
-                    <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Select Format</h3>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed">Choose the specific directory that matches your goals. Available in digital PDF for reading, or raw Excel/CSV for importing into your CRM.</p>
-                </div>
-                <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                    <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">02.</span>
-                    <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Filter Targets</h3>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed">Stop sending generic blasts. Use our detailed metadata to sort contacts by genre, location, and company size to find exact matches.</p>
-                </div>
-                <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                    <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">03.</span>
-                    <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Execute Pitch</h3>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed">Utilize our built-in submission guidelines. Reach out directly to decision-makers professionally. Get licensed. Get signed.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. VALUE SECTION -->
-    <section class="py-16 px-6 md:px-12 bg-white border-t border-gray-200 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-[6vw] font-bold uppercase leading-[0.8] tracking-tighter text-[#111]">
-                Stop Waiting.<br><span class="text-gray-300">Start Pitching.</span>
+        <!-- 2.8 SECTION HEADER -->
+        <section class="pb-6 px-6 md:px-12 max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="w-12 h-1 bg-[#FF3300] mb-6"></div>
+            <h2 class="text-3xl md:text-5xl lg:text-[3.5rem] font-bold uppercase leading-[0.9] tracking-tighter text-[#111]">
+                Access You Need to<br>Thrive In The Industry.
             </h2>
-            <div class="w-full md:w-1/2 md:ml-auto mt-8 pl-8 border-l-2 border-[#FF3300]">
-                <p class="text-xl font-light text-gray-600 leading-relaxed">The gatekeepers aren't hiding, you just don't have their direct lines. Our verified directories are the bridge between your unreleased tracks and the executives looking for them.</p>
+        </section>
+
+        <!-- 3. FEATURED FLAGSHIP -->
+        <section class="pb-16 px-6 md:px-12 max-w-4xl mx-auto overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 relative">
+                <div class="w-full md:w-[55%] relative z-10">
+                    <div class="font-mono text-[#FF3300] text-xs font-bold mb-4 uppercase tracking-widest text-center md:text-left">Flagship Bundle</div>
+                    <img src="https://static.wixstatic.com/media/326afb_7c54a11a2bd24c34b5daf248822b1920~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Film & TV Music Guide Full Bundle" class="w-full aspect-[4/3] object-cover shadow-editorial border border-gray-100 mx-auto">
+                </div>
+                <div class="w-full md:w-[45%] md:-ml-10 mt-6 md:mt-10 relative z-20 bg-white p-6 md:p-8 shadow-editorial border border-gray-100 text-center md:text-left flex flex-col items-center md:items-start">
+                    <h3 class="text-3xl md:text-4xl font-bold uppercase leading-[0.9] tracking-tighter mb-4">Film & TV<br>Music Guide</h3>
+                    <p class="text-gray-600 mb-6 font-light text-sm leading-relaxed">A complete year of updates. Four physical print editions and four digital PDF updates delivered quarterly. Never pitch to an outdated contact again.</p>
+                    <div class="flex items-center gap-6 pt-6 border-t border-gray-200 w-full justify-center md:justify-start">
+                        <span class="text-2xl font-mono font-bold text-[#111] tracking-tighter">$750.00</span>
+                        <button class="bg-[#111] text-white px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#FF3300] transition-colors">Add to Cart</button>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- 3.5 LIGHT BLACK SEPARATOR WITH ARROWS -->
+        <div class="max-w-5xl mx-auto px-6 md:px-12 flex items-center gap-4 py-12">
+            <!-- Left Arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-300 rotate-180">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            <!-- Light Black Line -->
+            <div class="flex-grow h-[1px] bg-gray-200"></div>
+            <!-- Right Arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-300">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
         </div>
-    </section>
+
+        <!-- 4. PRODUCT SYSTEM -->
+        <section id="directories" class="py-16 px-6 md:px-12">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-16">
+                    <div class="flex flex-col md:flex-row items-baseline gap-6">
+                        <div class="bg-[#111] text-white px-6 py-2 font-mono text-xs font-bold uppercase tracking-[0.4em] rotate-[-2deg] shadow-editorial shrink-0">
+                            Archive.
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter text-[#111] leading-none">
+                            The Complete Directory Index
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-10 lg:gap-16">
+                    <div class="w-full md:w-1/4 flex flex-col gap-6 md:sticky md:top-32 h-fit">
+                        <h2 class="text-sm font-mono text-gray-400 uppercase tracking-widest mb-6 pb-4 border-b border-gray-200">Filter By Vertical</h2>
+                        <button onclick="filterLedger('all')" class="cat-btn cat-active text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">All Data</button>
+                        <button onclick="filterLedger('labels')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">A&R / Labels</button>
+                        <button onclick="filterLedger('sync')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Film / TV Sync</button>
+                        <button onclick="filterLedger('legal')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Legal / Biz</button>
+                        <button onclick="filterLedger('promo')" class="cat-btn text-4xl font-bold text-left uppercase tracking-tighter hover:text-[#FF3300]">Playlists / PR</button>
+                    </div>
+
+                    <div class="w-full md:w-3/4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10" id="ledger-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HOW IT WORKS -->
+        <section class="py-16 border-t border-gray-200 px-6 md:px-12">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-12 text-center">How to use our data</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                        <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">01.</span>
+                        <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Select Format</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Choose the specific directory that matches your goals. Available in digital PDF for reading, or raw Excel/CSV for importing into your CRM.</p>
+                    </div>
+                    <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                        <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">02.</span>
+                        <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Filter Targets</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Stop sending generic blasts. Use our detailed metadata to sort contacts by genre, location, and company size to find exact matches.</p>
+                    </div>
+                    <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                        <span class="font-mono text-[#FF3300] text-lg font-bold block mb-6">03.</span>
+                        <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Execute Pitch</h3>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Utilize our built-in submission guidelines. Reach out directly to decision-makers professionally. Get licensed. Get signed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. VALUE SECTION -->
+        <section class="py-16 px-6 md:px-12 border-t border-gray-200 relative overflow-hidden">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-[6vw] font-bold uppercase leading-[0.8] tracking-tighter text-[#111]">
+                    Stop Waiting.<br><span class="text-gray-300">Start Pitching.</span>
+                </h2>
+                <div class="w-full md:w-1/2 md:ml-auto mt-8 pl-8 border-l-2 border-[#FF3300]">
+                    <p class="text-xl font-light text-gray-600 leading-relaxed">The gatekeepers aren't hiding, you just don't have their direct lines. Our verified directories are the bridge between your unreleased tracks and the executives looking for them.</p>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- END CONTENT WRAPPER -->
 
     <!-- 7. FOOTER -->
     <footer class="bg-[#111] text-white border-t border-[#111] pt-16 pb-8 px-6 md:px-12">
@@ -308,7 +331,7 @@
             </div>
         </div>
         <div class="max-w-5xl mx-auto pt-8 border-t border-gray-800 text-xs font-mono text-gray-500 flex flex-col md:flex-row justify-between">
-            <p>© 2026 Music Business Registry. All rights reserved.</p><p>Designed for the Industry.</p>
+            <p>© 2026 Music Industry Registry Online. All rights reserved.</p><p>Designed for the Industry.</p>
         </div>
     </footer>
 
