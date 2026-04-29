@@ -161,14 +161,13 @@
             </div>
         </div>
 
-        <!-- 2.5 AS SEEN IN -->
-        <section class="py-10 border-b border-gray-200 px-6 md:px-12 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16">
-            <span class="font-mono text-[10px] font-black tracking-[0.3em] uppercase text-[#111] lg:border-r lg:border-gray-200 lg:pr-12">Industry Authority</span>
-            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 lg:gap-20 transition-all">
-                <span class="font-serif text-3xl md:text-4xl font-bold tracking-tighter text-[#111]">Billboard</span>
-                <span class="font-sans text-2xl md:text-3xl font-black tracking-tight uppercase text-[#111]">VARIETY</span>
-                <span class="font-serif text-3xl md:text-4xl italic tracking-wider text-[#111]">Rolling Stone</span>
-                <span class="font-sans text-2xl md:text-3xl font-bold tracking-tighter uppercase text-[#111]">Forbes</span>
+        <!-- 2.5 AS SEEN IN (Single Clean Line of Logos) -->
+        <section class="py-12 border-b border-gray-200 px-6 md:px-12 flex items-center justify-center bg-white">
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 lg:gap-24 transition-all">
+                <span class="font-serif text-3xl md:text-5xl font-bold tracking-tighter text-[#111]">Billboard</span>
+                <span class="font-sans text-2xl md:text-4xl font-black tracking-tight uppercase text-[#111]">VARIETY</span>
+                <span class="font-serif text-3xl md:text-5xl italic tracking-wider text-[#111]">Rolling Stone</span>
+                <span class="font-sans text-2xl md:text-4xl font-bold tracking-tighter uppercase text-[#111]">Forbes</span>
                 <span class="font-serif text-2xl md:text-3xl font-bold tracking-tight leading-none text-center text-[#111]">Music Business<br>Worldwide</span>
             </div>
         </section>
@@ -207,6 +206,7 @@
                 </div>
 
                 <div class="bg-white border-2 border-[#111] shadow-editorial flex flex-col md:flex-row transition-all overflow-hidden">
+                    <!-- Category Selector -->
                     <div class="flex-grow flex items-center border-b-2 md:border-b-0 md:border-r-2 border-[#111] px-6 py-4 md:py-6 relative bg-white hover:bg-gray-50 transition-colors cursor-pointer group">
                         <div class="flex flex-col w-full">
                             <span class="font-mono text-[10px] text-gray-400 uppercase tracking-widest mb-1">Vertical</span>
@@ -242,6 +242,7 @@
                         </div>
                     </div>
 
+                    <!-- Search Button -->
                     <button id="search-btn" class="bg-[#FF3300] hover:bg-[#111] text-white px-10 py-8 font-mono text-sm md:text-base font-bold uppercase tracking-widest transition-colors flex-shrink-0 flex items-center justify-center gap-3">
                         <span>Find</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -313,28 +314,31 @@
                 </div>
             </section>
 
-            <section class="py-16 border-t border-gray-200 px-6 md:px-12 bg-white">
-                <div class="max-w-5xl mx-auto">
-                    <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-10 text-center">How to use our data</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                            <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">01.</span>
-                            <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Select Format</h3>
-                            <p class="text-gray-600 font-light text-sm leading-relaxed">Choose the specific directory that matches your goals. Available in digital PDF for reading, or raw Excel/CSV for importing into your CRM.</p>
-                        </div>
-                        <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                            <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">02.</span>
-                            <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Filter Targets</h3>
-                            <p class="text-gray-600 font-light text-sm leading-relaxed">Stop sending generic blasts. Use our detailed metadata to sort contacts by genre, location, and company size to find exact matches.</p>
-                        </div>
-                        <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
-                            <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">03.</span>
-                            <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Execute Pitch</h3>
-                            <p class="text-gray-600 font-light text-sm leading-relaxed">Utilize our built-in submission guidelines. Reach out directly to decision-makers professionally. Get licensed. Get signed.</p>
+            <!-- HOW TO USE OUR DATA (Dark White / Dim Background) -->
+            <div class="bg-[#F9F9F9] border-t border-gray-200">
+                <section class="py-16 px-6 md:px-12 bg-[#F9F9F9]">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-10 text-center">How to use our data</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                                <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">01.</span>
+                                <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Select Format</h3>
+                                <p class="text-gray-600 font-light text-sm leading-relaxed">Choose the specific directory that matches your goals. Available in digital PDF for reading, or raw Excel/CSV for importing into your CRM.</p>
+                            </div>
+                            <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                                <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">02.</span>
+                                <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Filter Targets</h3>
+                                <p class="text-gray-600 font-light text-sm leading-relaxed">Stop sending generic blasts. Use our detailed metadata to sort contacts by genre, location, and company size to find exact matches.</p>
+                            </div>
+                            <div class="flex flex-col md:border-l border-gray-200 md:pl-8 relative">
+                                <span class="font-mono text-[#FF3300] text-lg font-bold block mb-4">03.</span>
+                                <h3 class="text-2xl font-bold uppercase mb-4 tracking-tight">Execute Pitch</h3>
+                                <p class="text-gray-600 font-light text-sm leading-relaxed">Utilize our built-in submission guidelines. Reach out directly to decision-makers professionally. Get licensed. Get signed.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <section class="py-16 px-6 md:px-12 border-t border-gray-200 relative overflow-hidden bg-white">
                 <div class="max-w-5xl mx-auto">
